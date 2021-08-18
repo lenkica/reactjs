@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { value: "coconut" };
+    this.state = { value: "Allicante" };
 
     // this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -15,7 +15,7 @@ class App extends React.Component {
   //   }
 
   handleSubmit(event) {
-    alert("Your favorite flavor is: " + this.state.value);
+    alert("Choose the location:  " + this.state.value);
     event.preventDefault();
   }
 
@@ -27,12 +27,12 @@ class App extends React.Component {
     return (
       <form onSubmit={this.handleSubmit}>
         <label>
-          Pick your favorite flavor:
+          Choose the location: 
           <select value={this.state.value} onChange={this.handleChange}>
-            <option value="grapefruit">Grapefruit</option>
-            <option value="lime">Lime</option>
-            <option value="coconut">Coconut</option>
-            <option value="mango">Mango</option>
+            <option value="Braila">Braila</option>
+            <option value="Carouge">Carouge</option>
+            <option value="Allicante">Allicante</option>
+            
           </select>
         </label>
         <input type="submit" value="Submit" />
