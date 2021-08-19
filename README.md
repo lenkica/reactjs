@@ -1,3 +1,10 @@
+My take on the dropdown menu from the amazing lyhd! 
+The idea is to create a dropdown menu by three methods:
+- hardcode the options
+- create an array and loop through the array
+- create a JSON file and loop through it
+- IN THE NEXT STEP: create hierarchical dropdown menu reading from the API rest.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
